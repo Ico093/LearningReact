@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ico093/LearnFoundation.git"
+    "url": "git+https://github.com/Ico093/LearningReact.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ico093/LearnFoundation/issues"
+    "url": "https://github.com/Ico093/LearningReact/issues"
   },
-  "homepage": "https://github.com/Ico093/LearnFoundation#readme"
+  "homepage": "https://github.com/Ico093/LearningReact#readme"
 }
