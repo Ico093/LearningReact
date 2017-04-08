@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 
 
-class AboutPage extends Component {
+class CoursesPage extends Component {
     render(){
         return(
             <div className="jumbotron">
-                <h1>About</h1>
-                <p>Ne e Qkooooo</p>
+                <h1>CoursesPage</h1>
             </div>
         );
     }
 }
 
-export default AboutPage;
+export default CoursesPage;
