@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as courseActions from '../../actions/courseActions';
+import * as courseActions from '../../../actions/courseActions';
 
-class CoursesPage extends Component {
+class ManageCoursePage extends Component {
     constructor(props, context) {
         super(props, context);
     }
 
-    courseRow(course, index) {
-        return (
-            <div key={index}>{course.title}</div>
-        )
-    }
-
     render() {
         return (
-            <div className="jumbotron">
-                <h1>CoursesPage</h1>
-                {this.props.courses.map(this.courseRow)}
+            <div>
+                <h1>Manage Course</h1>
             </div>
         );
     }
@@ -36,4 +29,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ManageCoursePage);

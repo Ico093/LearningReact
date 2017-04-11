@@ -7,7 +7,8 @@ import {
 
 import HomePage from './home/HomePage'
 import AboutPage from './about/AboutPage'
-import CoursesPage from './course/CoursesPage'
+import CoursesPage from './course/Courses/CoursesPage'
+import ManageCoursePage from './course/ManageCourses/ManageCoursePage';
 
 class App extends Component {
   render() {
@@ -24,6 +25,8 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/courses" component={CoursesPage} />
+          <Route exact path="/course" component={ManageCoursePage} />
+          <Route path="/course/:id" component={ManageCoursePage} />
         </nav>
       </Router>
     );
