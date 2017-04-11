@@ -1,7 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
 var express = require('express');
-var config = require('../webpack.config');
+var open = require('open');
+
+var config = require('../webpack.config.dev');
 
 var port = 3001;
 var app = express();
@@ -19,8 +21,8 @@ app.get('*', function (req, res) {
 
 app.listen(port, function (err) {
   if (err) {
-    return console.error(err);
+    console.error(err);
+  } else {
+    open("http://localhost:" + port);
   }
-
-  console.log('Listening at http://localhost:' + port + '/');
 });

@@ -14,11 +14,11 @@ class App extends Component {
     return (
       <Router path="/">
         <nav>
-            <CustomLink to="/" activeOnlyWhenExact={true} label="Home" />
-            {" | "} 
-            <CustomLink to="/about" activeOnlyWhenExact={true} label="About" />
-            {" | "} 
-            <CustomLink to="/courses" activeOnlyWhenExact={true} label="Courses" />
+          <CustomLink to="/" activeOnlyWhenExact={true} label="Home" />
+          {" | "}
+          <CustomLink to="/about" activeOnlyWhenExact={true} label="About" />
+          {" | "}
+          <CustomLink to="/courses" activeOnlyWhenExact={true} label="Courses" />
           <hr />
 
           <Route exact path="/" component={HomePage} />
@@ -32,7 +32,7 @@ class App extends Component {
 
 const CustomLink = ({ label, to, activeOnlyWhenExact }) => (
   <Route path={to} exact={activeOnlyWhenExact} children={({ match }) => (
-      <Link to={to} className={match ? 'active' : ''}>{label}</Link>
+    <Link to={to} className={match ? 'active' : ''}>{label}</Link>
   )} />
 )
 
